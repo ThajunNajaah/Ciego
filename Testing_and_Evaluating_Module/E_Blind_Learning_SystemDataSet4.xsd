@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="E_Blind_Learning_SystemDataSet4" targetNamespace="http://tempuri.org/E_Blind_Learning_SystemDataSet4.xsd" xmlns:mstns="http://tempuri.org/E_Blind_Learning_SystemDataSet4.xsd" xmlns="http://tempuri.org/E_Blind_Learning_SystemDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="E_Blind_Learning_SystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="E_Blind_Learning_SystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Testing_and_Evaluating_Module.Properties.Settings.GlobalReference.Default.E_Blind_Learning_SystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Teacher_Add_Essay_QuestionTableAdapter" GeneratorDataComponentClassName="Teacher_Add_Essay_QuestionTableAdapter" Name="Teacher_Add_Essay_Question" UserDataComponentName="Teacher_Add_Essay_QuestionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="E_Blind_Learning_SystemConnectionString (Settings)" DbObjectName="E_Blind_Learning_System.dbo.Teacher_Add_Essay_Question" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Teacher_Add_Essay_Question] DEFAULT VALUES</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT QuestionID FROM dbo.Teacher_Add_Essay_Question</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="QuestionID" DataSetColumn="QuestionID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="E_Blind_Learning_SystemDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="E_Blind_Learning_SystemDataSet4" msprop:Generator_UserDSName="E_Blind_Learning_SystemDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Teacher_Add_Essay_Question" msprop:Generator_TableClassName="Teacher_Add_Essay_QuestionDataTable" msprop:Generator_TableVarName="tableTeacher_Add_Essay_Question" msprop:Generator_TablePropName="Teacher_Add_Essay_Question" msprop:Generator_RowDeletingName="Teacher_Add_Essay_QuestionRowDeleting" msprop:Generator_RowChangingName="Teacher_Add_Essay_QuestionRowChanging" msprop:Generator_RowEvHandlerName="Teacher_Add_Essay_QuestionRowChangeEventHandler" msprop:Generator_RowDeletedName="Teacher_Add_Essay_QuestionRowDeleted" msprop:Generator_UserTableName="Teacher_Add_Essay_Question" msprop:Generator_RowChangedName="Teacher_Add_Essay_QuestionRowChanged" msprop:Generator_RowEvArgName="Teacher_Add_Essay_QuestionRowChangeEvent" msprop:Generator_RowClassName="Teacher_Add_Essay_QuestionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnQuestionID" msprop:Generator_ColumnPropNameInRow="QuestionID" msprop:Generator_ColumnPropNameInTable="QuestionIDColumn" msprop:Generator_UserColumnName="QuestionID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
