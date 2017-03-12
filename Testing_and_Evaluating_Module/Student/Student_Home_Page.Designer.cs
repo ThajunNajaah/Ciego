@@ -123,6 +123,7 @@
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Examination";
             this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 

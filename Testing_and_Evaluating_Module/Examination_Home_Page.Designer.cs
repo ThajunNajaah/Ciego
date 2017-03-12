@@ -148,6 +148,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(314, 37);
             this.txtPassword.TabIndex = 32;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUserID
             // 
@@ -156,6 +157,7 @@
             this.txtUserID.Name = "txtUserID";
             this.txtUserID.Size = new System.Drawing.Size(314, 37);
             this.txtUserID.TabIndex = 31;
+            this.txtUserID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUserID.TextChanged += new System.EventHandler(this.txtUserID_TextChanged);
             // 
             // label6

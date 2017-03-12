@@ -17,7 +17,7 @@ namespace Testing_and_Evaluating_Module.Student
         public static int incQuestion = 1;
         public static int CurrQue = 1;
         protected string PostBackstr;
-
+        
 
         public Test()
         {
@@ -38,6 +38,11 @@ namespace Testing_and_Evaluating_Module.Student
             lblFinish.Visible  = false;
             panelTimer.Visible = false;
             lblScore.Visible = false;
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            
         }
 
         //PostBackstr = Page.ClientScript.GetPostBackEventReference(this, "time");

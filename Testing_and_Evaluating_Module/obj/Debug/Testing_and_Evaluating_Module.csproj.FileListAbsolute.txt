@@ -21,11 +21,9 @@ C:\Users\M.A.Thajun Najaah\documents\visual studio 2013\Projects\Testing_and_Eva
 C:\Users\M.A.Thajun Najaah\documents\visual studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.Teacher.AddEssayQuestion.resources
 C:\Users\M.A.Thajun Najaah\documents\visual studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.Teacher.AddQuestion.resources
 C:\Users\M.A.Thajun Najaah\documents\visual studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.Teacher.Teacher_Home_Page.resources
-C:\Users\M.A.Thajun Najaah\documents\visual studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.VoiceControlMain.resources
 C:\Users\M.A.Thajun Najaah\documents\visual studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.csproj.GenerateResource.Cache
 C:\Users\M.A.Thajun Najaah\documents\visual studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.exe
 C:\Users\M.A.Thajun Najaah\documents\visual studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.pdb
-C:\Users\M.A.Thajun Najaah\Documents\Visual Studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.csprojResolveAssemblyReference.cache
 C:\Users\M.A.Thajun Najaah\Documents\Visual Studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\bin\Debug\Testing_and_Evaluating_Module.exe.manifest
 C:\Users\M.A.Thajun Najaah\Documents\Visual Studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\bin\Debug\log4net.dll
 C:\Users\M.A.Thajun Najaah\Documents\Visual Studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\bin\Debug\MySql.Data.dll
@@ -35,3 +33,4 @@ C:\Users\M.A.Thajun Najaah\Documents\Visual Studio 2013\Projects\Testing_and_Eva
 C:\Users\M.A.Thajun Najaah\Documents\Visual Studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\bin\Debug\log4net.xml
 C:\Users\M.A.Thajun Najaah\Documents\Visual Studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\bin\Debug\SpeechToText.pdb
 C:\Users\M.A.Thajun Najaah\Documents\Visual Studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.exe.manifest
+C:\Users\M.A.Thajun Najaah\documents\visual studio 2013\Projects\Testing_and_Evaluating_Module\Testing_and_Evaluating_Module\obj\Debug\Testing_and_Evaluating_Module.Student.Examintion_Essay.resources

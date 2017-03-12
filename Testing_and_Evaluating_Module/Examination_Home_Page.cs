@@ -29,6 +29,9 @@ namespace Testing_and_Evaluating_Module
         Choices clist = new Choices();
 
 
+        Boolean UserID = false;
+        Boolean Password = false;
+
         public Examination_Home_Page()
         {
             InitializeComponent();
@@ -69,12 +72,7 @@ namespace Testing_and_Evaluating_Module
                     this.Hide();
                     shp.Show();
                 }
-                else if (rd["USER_ID"].ToString() == txtUserID.Text && rd["Password"].ToString() == txtPassword.Text && rd["Category"].ToString() == "Blind")
-                {
-                    VoiceControlMain shp = new VoiceControlMain();
-                    this.Hide();
-                    shp.Show();
-                }
+               
                 else
                 {
                     lblMsg.Text = "Invalid UserID and Password!";
@@ -101,6 +99,7 @@ namespace Testing_and_Evaluating_Module
 
 
             txtPassword.Enabled = false;
+            txtUserID.Enabled  = false;
             // Construct an image object from a file in the local directory.
             // ... This file must exist in the solution.
             Image image = Image.FromFile("H:\\QuestionBank\\Login\\Login.jpg");
@@ -114,7 +113,7 @@ namespace Testing_and_Evaluating_Module
             this.Show();
             ss.SelectVoiceByHints(VoiceGender.Female);
             ss.Speak("Hi , You are Welcome to the examination module, Please give user ID and Password to login the module! ");
-            clist.Add(new String[] { "UserID", "Password","login","cancel"});
+            clist.Add(new String[] { "UserID", "Password","login","cancel","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Zero"});
 
             Grammar gr = new Grammar(new GrammarBuilder(clist));
             try
@@ -143,50 +142,218 @@ namespace Testing_and_Evaluating_Module
 
             if (s == "UserID")
             {
-                this.WindowState = FormWindowState.Maximized;
-                this.Show();
-
-              
+                txtUserID.Enabled = true;
+                UserID = true;
                 
-
-
+               
             }
+
+           
+
+
             else if (s == "Password")
             {
-                this.Hide();
-                Instructions ins = new Instructions();
-                ins.MdiParent = this.MdiParent;
-                ins.WindowState = FormWindowState.Maximized;
-                ins.Show();
-                ss.SelectVoiceByHints(VoiceGender.Female);
+                txtPassword.Enabled = true;
+                Password = true;
+               
 
+                
+            }
+
+            else if (s == "One")
+            {
+                if (UserID)
+                {
+                    txtUserID.Text = "1";
+                    UserID = false;
+                }
+                else if (Password)
+                {
+                    txtPassword.Text = txtPassword.Text + "1";
+
+                }
 
             }
+            else if (s == "Two")
+            {
+                if (UserID)
+                {
+                    txtUserID.Text = "2";
+                    UserID = false;
+                }
+                else if (Password)
+                {
+                    txtPassword.Text = txtPassword.Text + "2";
+
+                }
+
+            }
+            else if (s == "Three")
+            {
+                if (UserID)
+                {
+                    txtUserID.Text = "3";
+                    UserID = false;
+                }
+                else if (Password)
+                {
+                    txtPassword.Text = txtPassword.Text + "3";
+
+                }
+
+            }
+            else if (s == "Four")
+            {
+                if (UserID)
+                {
+                    txtUserID.Text = "4";
+                    UserID = false;
+                }
+                else if (Password)
+                {
+                    txtPassword.Text = txtPassword.Text + "4";
+
+                }
+
+            }
+            else if (s == "Five")
+            {
+                if (UserID)
+                {
+                    txtUserID.Text = "5";
+                    UserID = false;
+                }
+                else if (Password)
+                {
+                    txtPassword.Text = txtPassword.Text + "5";
+
+                }
+
+            }
+            else if (s == "Six")
+            {
+                if (UserID)
+                {
+                    txtUserID.Text = "6";
+                    UserID = false;
+                }
+                else if (Password)
+                {
+                    txtPassword.Text = txtPassword.Text + "6";
+
+                }
+
+            }
+            else if (s == "Seven")
+            {
+                if (UserID)
+                {
+                    txtUserID.Text = "7";
+                    UserID = false;
+                }
+                else if (Password)
+                {
+                    txtPassword.Text = txtPassword.Text + "7";
+
+                }
+
+                else if (s == "Eight")
+                {
+                    if (UserID)
+                    {
+                        txtUserID.Text = "8";
+                        UserID = false;
+                    }
+                    else if (Password)
+                    {
+                        txtPassword.Text = txtPassword.Text + "8";
+
+                    }
+
+                }
+                else if (s == "Nine")
+                {
+                    if (UserID)
+                    {
+                        txtUserID.Text = "9";
+                        UserID = false;
+                    }
+                    else if (Password)
+                    {
+                        txtPassword.Text = txtPassword.Text + "9";
+
+                    }
+
+                }
+                else if (s == "Zero")
+                {
+                    if (UserID)
+                    {
+                        txtUserID.Text = "0";
+                        UserID = false;
+                    }
+                    else if (Password)
+                    {
+                        txtPassword.Text = txtPassword.Text + "0";
+
+                    }
+
+                }
+            }
+            
+
+
             else if (s == "login")
             {
-                this.Hide();
-                EBlind_Learning_Module ins = new EBlind_Learning_Module();
-                ins.MdiParent = this.MdiParent;
-                ins.WindowState = FormWindowState.Maximized;
-                ins.Show();
-                ss.SelectVoiceByHints(VoiceGender.Female);
 
+                SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-DQ2CE3B\NAJA;Initial Catalog=E_Blind_Learning_System;Integrated Security=True");
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("select * from CiegoUser where USER_ID ='" + txtUserID.Text.Trim() + "'and Password ='" + txtPassword.Text.Trim() + "'", conn);
+                rd = cmd.ExecuteReader();
+                while (rd.Read())
+                {
+                    if (rd["USER_ID"].ToString() == txtUserID.Text && rd["Password"].ToString() == txtPassword.Text && rd["Category"].ToString() == "Admin")
+                    {
+                        ss.Speak("Login Successfully!");
+                        Admin_Home_Page ahp = new Admin_Home_Page();
+                        this.Hide();
+                        ahp.Show();
+                       
+                    }
+                    else if (rd["USER_ID"].ToString() == txtUserID.Text && rd["Password"].ToString() == txtPassword.Text && rd["Category"].ToString() == "Teacher")
+                    {
+                        ss.Speak("Login Successfully!");
+                        Teacher_Home_Page thp = new Teacher_Home_Page();
+                        this.Hide();
+                        thp.Show();
 
+                    }
+                    else if (rd["USER_ID"].ToString() == txtUserID.Text && rd["Password"].ToString() == txtPassword.Text && rd["Category"].ToString() == "Student")
+                    {
+                        ss.Speak("Login Successfully!");
+                        Student_Home_Page shp = new Student_Home_Page();
+                        this.Hide();
+                        shp.Show();
+                    }
+
+                    else
+                    {
+                        lblMsg.Text = "Invalid UserID and Password!";
+                        ss.Speak("Invalid UserID and Password!");
+                    }
+                    saveHistory();
+                }
             }
-
 
             else if (s == "cancel")
             {
-                this.Hide();
-                Examination_Home_Page elm = new Examination_Home_Page();
-                elm.MdiParent = this.MdiParent;
-                elm.WindowState = FormWindowState.Maximized;
-                elm.Show();
-                ss.SelectVoiceByHints(VoiceGender.Female);
-
+                this.Close();
+                
             }
-
         }
+
+
+        
         
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -205,7 +372,7 @@ namespace Testing_and_Evaluating_Module
 
         private void txtUserID_TextChanged(object sender, EventArgs e)
         {
-            txtPassword.Enabled = true;
+            //txtPassword.Enabled = true;
             txtPassword.Focus();
         }
     }

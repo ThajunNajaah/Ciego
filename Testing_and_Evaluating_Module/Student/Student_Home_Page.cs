@@ -59,7 +59,7 @@ namespace Testing_and_Evaluating_Module.Student
             this.Show();
             ss.SelectVoiceByHints(VoiceGender.Female);
             ss.Speak("Hi , You are Welcome to the examination module, Here You can attend exam, quizes, you can view your results . What to you prefer? if you want to go examination please say 'Exam' or  if you want to attend quiz please say 'Quiz' or if you need to view your results please say 'View Result' or if you want to go home please say 'Back Home' else to going previous page please say 'Previous' ");
-            clist.Add(new String[] { "Quiz", "View Result", "Back Home", "Previous" });
+            clist.Add(new String[] { "Quiz", "View Result", "Back", "Previous" });
 
             Grammar gr = new Grammar(new GrammarBuilder(clist));
             try
@@ -104,7 +104,7 @@ namespace Testing_and_Evaluating_Module.Student
 
 
             //}
-            else if (s == "Back Home")
+            else if (s == "Back")
             {
                 this.Hide();
                 EBlind_Learning_Module ins = new EBlind_Learning_Module();
@@ -117,17 +117,23 @@ namespace Testing_and_Evaluating_Module.Student
             }
 
 
-            else if (s == "Previous")
-            {
-                this.Hide();
-                Examination_Home_Page elm = new Examination_Home_Page();
-                elm.MdiParent = this.MdiParent;
-                elm.WindowState = FormWindowState.Maximized;
-                elm.Show();
-                ss.SelectVoiceByHints(VoiceGender.Female);
+            //else if (s == "Previous")
+            //{
+            //    this.Hide();
+            //    Examination_Home_Page elm = new Examination_Home_Page();
+            //    elm.MdiParent = this.MdiParent;
+            //    elm.WindowState = FormWindowState.Maximized;
+            //    elm.Show();
+            //    ss.SelectVoiceByHints(VoiceGender.Female);
 
-            }
+            //}
 
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Examination_MCQ em = new Examination_MCQ();
+            em.Show();
         }
     }
 }

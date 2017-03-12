@@ -17,9 +17,14 @@ namespace Testing_and_Evaluating_Module
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EBlind_Learning_Module());
-           // Application.Run(new SpeechRecognition());
-            //Application.Run(new Speech());
+
+
+           //Application.Run(new EBlind_Learning_Module());         
+          Application.Run(new Instructions());
+        // Application.Run(new Examintion_Essay());
+           // Application.Run(new Examination_MCQ());
+    
+          
         }
     }
 }

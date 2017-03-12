@@ -35,6 +35,93 @@
     <Reference Include="ActiproSoftware.Shared.Net20, Version=1.0.102.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="ActiproSoftware.SyntaxEditor.Net20, Version=4.0.283.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
     <Reference Include="ActiproSoftware.WinUICore.Net20, Version=1.0.102.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="ejml-0.23">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\ejml-0.23.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.AWT.WinForms">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.AWT.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Charsets">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Charsets.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Cldrdata">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Cldrdata.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Corba">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Corba.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Jdbc">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Jdbc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Localedata">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Localedata.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Management">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Media">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Misc">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Naming">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Naming.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Nashorn">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Nashorn.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Crypto">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime.JNI">
+      <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.Runtime.JNI.dll</HintPath>
+    </Reference>
     <Reference Include="Interop.DXTMSFTLib">
       <HintPath>..\..\..\..\..\Desktop\Projects\google-speech-to-text-api.net-master\google-speech-to-text-api.net-master\SpeechToTextLib\obj\x86\Release\Interop.DXTMSFTLib.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -42,6 +129,15 @@
     <Reference Include="Interop.DXTRANSLib">
       <HintPath>..\..\..\..\..\Desktop\Projects\google-speech-to-text-api.net-master\google-speech-to-text-api.net-master\SpeechToTextLib\obj\x86\Release\Interop.DXTRANSLib.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="javax.json">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\javax.json.dll</HintPath>
+    </Reference>
+    <Reference Include="joda-time">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\joda-time.dll</HintPath>
+    </Reference>
+    <Reference Include="jollyday">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\jollyday.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.7\lib\net45-full\log4net.dll</HintPath>
@@ -64,11 +160,23 @@
     <Reference Include="MySql.Data.Entity.EF6">
       <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
     </Reference>
+    <Reference Include="protobuf">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="slf4j-api">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\slf4j-api.dll</HintPath>
+    </Reference>
+    <Reference Include="slf4j-simple">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\slf4j-simple.dll</HintPath>
+    </Reference>
     <Reference Include="SpeechAPI.vshost">
       <HintPath>H:\Esoft\SpeechAPI\SpeechAPI\bin\Debug\SpeechAPI.vshost.exe</HintPath>
     </Reference>
     <Reference Include="SpeechToText">
       <HintPath>..\..\..\..\..\Desktop\Projects\google-speech-to-text-api.net-master\google-speech-to-text-api.net-master\SpeechToTextLib\obj\x86\Release\SpeechToText.dll</HintPath>
+    </Reference>
+    <Reference Include="stanford-corenlp-3.7.0">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\stanford-corenlp-3.7.0.dll</HintPath>
     </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -76,6 +184,9 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Log" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Security" />
     <Reference Include="System.Speech" />
@@ -90,6 +201,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
+    <Reference Include="xom">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\xom.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\AddStudent.cs">
@@ -128,6 +242,7 @@
     <Compile Include="BlindUser\BlindHomePage.Designer.cs">
       <DependentUpon>BlindHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="EBlind_Learning_Module.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +270,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>E_Blind_Learning_SystemDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="E_Blind_Learning_SystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>E_Blind_Learning_SystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="E_Blind_Learning_SystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>E_Blind_Learning_SystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="E_Blind_Learning_SystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>E_Blind_Learning_SystemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="E_Blind_Learning_SystemDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>E_Blind_Learning_SystemDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="E_Blind_Learning_SystemDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>E_Blind_Learning_SystemDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="E_Blind_Learning_SystemDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>E_Blind_Learning_SystemDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="E_Blind_Learning_SystemDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>E_Blind_Learning_SystemDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestionClass.cs" />
@@ -164,18 +314,19 @@
     <Compile Include="Speech.Designer.cs">
       <DependentUpon>Speech.cs</DependentUpon>
     </Compile>
-    <Compile Include="SpeechRecognition.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SpeechRecognition.Designer.cs">
-      <DependentUpon>SpeechRecognition.cs</DependentUpon>
-    </Compile>
     <Compile Include="SpeechSynthesis.cs" />
+    <Compile Include="Student\Class1.cs" />
     <Compile Include="Student\Examination_MCQ.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Student\Examination_MCQ.Designer.cs">
       <DependentUpon>Examination_MCQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Examintion_Essay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Examintion_Essay.Designer.cs">
+      <DependentUpon>Examintion_Essay.cs</DependentUpon>
     </Compile>
     <Compile Include="Student\Instructions.cs">
       <SubType>Form</SubType>
@@ -213,12 +364,7 @@
     <Compile Include="Teacher\Teacher_Home_Page.Designer.cs">
       <DependentUpon>Teacher_Home_Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="VoiceControlMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VoiceControlMain.Designer.cs">
-      <DependentUpon>VoiceControlMain.cs</DependentUpon>
-    </Compile>
+    <Compile Include="TestStanford.cs" />
     <EmbeddedResource Include="Admin\AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,11 +398,89 @@
     <EmbeddedResource Include="Speech.resx">
       <DependentUpon>Speech.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SpeechRecognition.resx">
-      <DependentUpon>SpeechRecognition.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\org_alternate_names.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\org_city_of_headquarters.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\org_country_of_headquarters.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\org_parents.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\org_politicalSLASHreligious_affiliation.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\org_shareholders.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\org_stateorprovince_of_headquarters.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\org_subsidiaries.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\org_top_membersSLASHemployees.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_age.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_alternate_names.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_cause_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_charges.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_children.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_cities_of_residence.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_city_of_birth.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_city_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_countries_of_residence.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_country_of_birth.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_country_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_date_of_birth.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_date_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_employee_of.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_origin.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_other_family.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_parents.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_schools_attended.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_siblings.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_spouse.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_stateorprovinces_of_residence.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_stateorprovince_of_birth.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_stateorprovince_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\per_title.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\defs.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_alternate_names.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_city_of_headquarters.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_country_of_headquarters.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_date_dissolved.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_date_founded.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_dissolved.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_founded.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_founded_by.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_members.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_member_of.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_number_of_employeesSLASHmembers.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_parents.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_politicalSLASHreligious_affiliation.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_shareholders.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_stateorprovince_of_headquarters.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_subsidiaries.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_top_membersSLASHemployees.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\org_website.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_age.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_alternate_names.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_cause_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_charges.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_children.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_cities_of_residence.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_city_of_birth.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_city_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_countries_of_residence.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_country_of_birth.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_country_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_date_of_birth.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_date_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_employee_of.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_member_of.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_origin.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_other_family.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_parents.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_religion.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_schools_attended.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_siblings.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_spouse.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_stateorprovinces_of_residence.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_stateorprovince_of_birth.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_stateorprovince_of_death.rules" />
+    <EmbeddedResource Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_title.rules" />
     <EmbeddedResource Include="Student\Examination_MCQ.resx">
       <DependentUpon>Examination_MCQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\Examintion_Essay.resx">
+      <DependentUpon>Examintion_Essay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\Instructions.resx">
       <DependentUpon>Instructions.cs</DependentUpon>
@@ -275,9 +499,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher\Teacher_Home_Page.resx">
       <DependentUpon>Teacher_Home_Page.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VoiceControlMain.resx">
-      <DependentUpon>VoiceControlMain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Content\bootstrap-theme.css.map" />
     <None Include="Content\bootstrap-theme.min.css.map" />
@@ -316,6 +537,83 @@
     <None Include="E_Blind_Learning_SystemDataSet2.xss">
       <DependentUpon>E_Blind_Learning_SystemDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="E_Blind_Learning_SystemDataSet3.xsc">
+      <DependentUpon>E_Blind_Learning_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>E_Blind_Learning_SystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet3.xss">
+      <DependentUpon>E_Blind_Learning_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet4.xsc">
+      <DependentUpon>E_Blind_Learning_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>E_Blind_Learning_SystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet4.xss">
+      <DependentUpon>E_Blind_Learning_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet5.xsc">
+      <DependentUpon>E_Blind_Learning_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>E_Blind_Learning_SystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet5.xss">
+      <DependentUpon>E_Blind_Learning_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet6.xsc">
+      <DependentUpon>E_Blind_Learning_SystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>E_Blind_Learning_SystemDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet6.xss">
+      <DependentUpon>E_Blind_Learning_SystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet7.xsc">
+      <DependentUpon>E_Blind_Learning_SystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>E_Blind_Learning_SystemDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet7.xss">
+      <DependentUpon>E_Blind_Learning_SystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet8.xsc">
+      <DependentUpon>E_Blind_Learning_SystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>E_Blind_Learning_SystemDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet8.xss">
+      <DependentUpon>E_Blind_Learning_SystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet9.xsc">
+      <DependentUpon>E_Blind_Learning_SystemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>E_Blind_Learning_SystemDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="E_Blind_Learning_SystemDataSet9.xss">
+      <DependentUpon>E_Blind_Learning_SystemDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="fonts\glyphicons-halflings-regular.ttf" />
     <None Include="fonts\glyphicons-halflings-regular.woff" />
@@ -344,6 +642,73 @@
     <None Include="Scripts\errors.json" />
     <None Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\version.json" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\coref\properties\deterministic-chinese.properties" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\coref\properties\deterministic-english.properties" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\coref\properties\neural-chinese.properties" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\coref\properties\neural-english.properties" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\coref\properties\statistical-english.properties" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\dcoref\coref.properties" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\md-model-dep.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\md-model.ser" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\neural\english-embeddings.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\neural\english-model-default.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\statistical\anaphoricity_model.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\statistical\classification_model.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\statistical\clustering_model.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\statistical\ranking_model.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\statistical\word_counts.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\coref.dict1.tsv" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\coref.dict2.tsv" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\coref.dict3.tsv" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\coref.dict4.tsv" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\countries" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\gender.data.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\gender.map.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\singleton.predictor.ser" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\statesandprovinces" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\gender\first_name_map_small" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\regexner_cased.tab" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\regexner_caseless.tab" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\propagate_relations.sh" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\semgrex\README" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tac-re-lr.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\defs.rules~" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_city_of_death.rules~" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_country_of_death.rules~" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_stateorprovince_of_birth.rules~" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\per_stateorprovince_of_death.rules~" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\kbp\tokensregex\propagate_relations.sh" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\lexparser\englishPCFG.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\naturalli\affinities\obj.tab.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\naturalli\affinities\pp.tab.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\naturalli\affinities\subj_obj_pp.tab.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\naturalli\affinities\subj_pp.tab.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\naturalli\affinities\subj_pp_obj.tab.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\naturalli\affinities\subj_pp_pp.tab.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\naturalli\clauseSearcherModel.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\ner\english.all.3class.distsim.crf.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\ner\english.all.3class.distsim.prop" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\ner\english.conll.4class.distsim.crf.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\ner\english.conll.4class.distsim.prop" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\ner\english.muc.7class.distsim.crf.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\ner\english.muc.7class.distsim.prop" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\ner\regexner.patterns" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\parser\nndep\english_SD.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\parser\nndep\english_UD.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\pos-tagger\english-left3words\english-left3words-distsim.tagger" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\pos-tagger\english-left3words\english-left3words-distsim.tagger.props" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\regexner\type_map_clean" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\sentiment\sentiment.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\supervised_relation_extractor\roth_relation_model_pipelineNER.ser" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\truecase\MixDisambiguation.list" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\truecase\truecasing.fast.caseless.prop" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\truecase\truecasing.fast.caseless.qn.ser.gz" />
+    <None Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\upos\ENUniversalPOS.tsurgeon" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\pipeline\StanfordCoreNLP.properties">
+      <CustomToolNamespace>False</CustomToolNamespace>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="stanford-corenlp-3.7.0-models\META-INF\MANIFEST.MF" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -1124,6 +1489,29 @@
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\animate.unigrams.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\demonyms.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\female.unigrams.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\inanimate.unigrams.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\male.unigrams.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\namegender.combine.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\ne.signatures.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\neutral.unigrams.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\plural.unigrams.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\singular.unigrams.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\dcoref\state-abbreviations.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\sutime\defs.sutime.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\sutime\english.holidays.sutime.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\sutime\english.sutime.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\sutime\jollyday\Holidays_sutime.xml" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\ud\feature_map.txt" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\pipeline\demo\corenlp-brat.css" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\pipeline\demo\corenlp-brat.html" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\pipeline\demo\corenlp-brat.js" />
+    <Content Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\pipeline\demo\corenlp-parseviewer.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="stanford-corenlp-3.7.0-models\edu\stanford\nlp\models\coref\hybrid\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -293,26 +293,26 @@
 
         #endregion
 
-        private System.Windows.Forms.Label LblQuestionID;
-        private System.Windows.Forms.Label lblQuestion;
-        private E_Blind_Learning_SystemDataSet e_Blind_Learning_SystemDataSet;
-        private System.Windows.Forms.BindingSource teacherAddQuestionBindingSource;
-        private E_Blind_Learning_SystemDataSetTableAdapters.Teacher_Add_QuestionTableAdapter teacher_Add_QuestionTableAdapter;
+        public  System.Windows.Forms.Label LblQuestionID;
+        public  System.Windows.Forms.Label lblQuestion;
+        public E_Blind_Learning_SystemDataSet e_Blind_Learning_SystemDataSet;
+        public System.Windows.Forms.BindingSource teacherAddQuestionBindingSource;
+        public E_Blind_Learning_SystemDataSetTableAdapters.Teacher_Add_QuestionTableAdapter teacher_Add_QuestionTableAdapter;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnPrevious;
-        private System.Windows.Forms.Button btnNext;
+        public System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RadioButton rdbOption4;
-        private System.Windows.Forms.RadioButton rdbOption3;
-        private System.Windows.Forms.RadioButton rdbOption1;
-        private System.Windows.Forms.RadioButton rdbOption2;
-        private System.Windows.Forms.TextBox txtScore;
-        private System.Windows.Forms.Label lblScore;
-        private System.Windows.Forms.TextBox txtUser;
+        public  System.Windows.Forms.RadioButton rdbOption4;
+        public  System.Windows.Forms.RadioButton rdbOption3;
+        public  System.Windows.Forms.RadioButton rdbOption1;
+        public  System.Windows.Forms.RadioButton rdbOption2;
+        public  System.Windows.Forms.TextBox txtScore;
+        public  System.Windows.Forms.Label lblScore;
+        public  System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label lblMsg;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        public  System.Windows.Forms.Label lblMsg;
+        public  System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox txtClock;
         private System.Windows.Forms.Timer timer2;
     }
