@@ -144,8 +144,10 @@
     </Reference>
     <Reference Include="Microsoft.SqlServer.Diagnostics.STrace, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.SqlServer.DtsMsg, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+    <Reference Include="Microsoft.SQLServer.DTSRuntimeWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SQLServer.DTSRuntimeWrap.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SqlServer.Msxml6_interop, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
@@ -154,12 +156,21 @@
     <Reference Include="Microsoft.SqlServer.PipelineHost, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="Microsoft.VisualC.STLCLR" />
+    <Reference Include="Microsoft.Workflow.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="MSCOMCTL, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data.Entity.EF6">
       <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
     </Reference>
+    <Reference Include="NuGet.Core, Version=1.6.30117.9648, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="PresentationBuildTasks" />
     <Reference Include="protobuf">
       <HintPath>..\packages\Stanford.NLP.CoreNLP.3.7.0.0\lib\protobuf.dll</HintPath>
     </Reference>
@@ -182,11 +193,13 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.IO.Log" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Security" />
     <Reference Include="System.Speech" />
@@ -255,6 +268,10 @@
     <Compile Include="Examination_Home_Page.Designer.cs">
       <DependentUpon>Examination_Home_Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="E_Blind_Learning_SystemDataSet.cs">
+      <DependentUpon>E_Blind_Learning_SystemDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="E_Blind_Learning_SystemDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -264,41 +281,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>E_Blind_Learning_SystemDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="E_Blind_Learning_SystemDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>E_Blind_Learning_SystemDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="E_Blind_Learning_SystemDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>E_Blind_Learning_SystemDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="E_Blind_Learning_SystemDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>E_Blind_Learning_SystemDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="E_Blind_Learning_SystemDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>E_Blind_Learning_SystemDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="E_Blind_Learning_SystemDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>E_Blind_Learning_SystemDataSet6.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="E_Blind_Learning_SystemDataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>E_Blind_Learning_SystemDataSet7.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="E_Blind_Learning_SystemDataSet8.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>E_Blind_Learning_SystemDataSet8.xsd</DependentUpon>
     </Compile>
     <Compile Include="E_Blind_Learning_SystemDataSet9.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -525,83 +507,6 @@
     </None>
     <None Include="E_Blind_Learning_SystemDataSet1.xss">
       <DependentUpon>E_Blind_Learning_SystemDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet2.xsc">
-      <DependentUpon>E_Blind_Learning_SystemDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>E_Blind_Learning_SystemDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet2.xss">
-      <DependentUpon>E_Blind_Learning_SystemDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet3.xsc">
-      <DependentUpon>E_Blind_Learning_SystemDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>E_Blind_Learning_SystemDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet3.xss">
-      <DependentUpon>E_Blind_Learning_SystemDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet4.xsc">
-      <DependentUpon>E_Blind_Learning_SystemDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>E_Blind_Learning_SystemDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet4.xss">
-      <DependentUpon>E_Blind_Learning_SystemDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet5.xsc">
-      <DependentUpon>E_Blind_Learning_SystemDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>E_Blind_Learning_SystemDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet5.xss">
-      <DependentUpon>E_Blind_Learning_SystemDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet6.xsc">
-      <DependentUpon>E_Blind_Learning_SystemDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>E_Blind_Learning_SystemDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet6.xss">
-      <DependentUpon>E_Blind_Learning_SystemDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet7.xsc">
-      <DependentUpon>E_Blind_Learning_SystemDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>E_Blind_Learning_SystemDataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet7.xss">
-      <DependentUpon>E_Blind_Learning_SystemDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet8.xsc">
-      <DependentUpon>E_Blind_Learning_SystemDataSet8.xsd</DependentUpon>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet8.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>E_Blind_Learning_SystemDataSet8.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="E_Blind_Learning_SystemDataSet8.xss">
-      <DependentUpon>E_Blind_Learning_SystemDataSet8.xsd</DependentUpon>
     </None>
     <None Include="E_Blind_Learning_SystemDataSet9.xsc">
       <DependentUpon>E_Blind_Learning_SystemDataSet9.xsd</DependentUpon>

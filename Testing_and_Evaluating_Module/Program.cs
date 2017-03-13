@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Testing_and_Evaluating_Module.Student;
+using System.Threading.Tasks;
+
 
 namespace Testing_and_Evaluating_Module
 {
@@ -20,9 +22,9 @@ namespace Testing_and_Evaluating_Module
 
 
            //Application.Run(new EBlind_Learning_Module());         
-          Application.Run(new Instructions());
-        // Application.Run(new Examintion_Essay());
-           // Application.Run(new Examination_MCQ());
+           //Application.Run(new Instructions());
+            //Application.Run(new Examintion_Essay());
+             Application.Run(new Examination_MCQ());
     
           
         }

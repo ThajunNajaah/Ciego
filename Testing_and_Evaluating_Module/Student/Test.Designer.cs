@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tableAdapterManager1 = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdapters.TableAdapterManager();
+           // this.tableAdapterManager1 = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdapters.TableAdapterManager();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblQuestion = new System.Windows.Forms.Label();
-            this.tableAdapterManager2 = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet2TableAdapters.TableAdapterManager();
+           // this.tableAdapterManager2 = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet2TableAdapters.TableAdapterManager();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.txtScore = new System.Windows.Forms.TextBox();
@@ -52,10 +52,10 @@
             // 
             // tableAdapterManager1
             // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.Teacher_Add_QuestionTableAdapter = null;
-            this.tableAdapterManager1.UpdateOrder = Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+          //  this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+           // this.tableAdapterManager1.Connection = null;
+          //  this.tableAdapterManager1.Teacher_Add_QuestionTableAdapter = null;
+            //this.tableAdapterManager1.UpdateOrder = Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // panel1
             // 
@@ -74,10 +74,10 @@
             // 
             // tableAdapterManager2
             // 
-            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager2.Connection = null;
-            this.tableAdapterManager2.Teacher_Add_QuestionTableAdapter = null;
-            this.tableAdapterManager2.UpdateOrder = Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+         //   this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
+         //   this.tableAdapterManager2.Connection = null;
+         //   this.tableAdapterManager2.Teacher_Add_QuestionTableAdapter = null;
+         //   this.tableAdapterManager2.UpdateOrder = Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // btnNext
             // 
@@ -219,9 +219,9 @@
 
         #endregion
 
-        private E_Blind_Learning_SystemDataSet1TableAdapters.TableAdapterManager tableAdapterManager1;
+      //  private E_Blind_Learning_SystemDataSet1TableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.Panel panel1;
-        private E_Blind_Learning_SystemDataSet2TableAdapters.TableAdapterManager tableAdapterManager2;
+       // private E_Blind_Learning_SystemDataSet2TableAdapters.TableAdapterManager tableAdapterManager2;
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnStart;

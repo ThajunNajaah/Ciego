@@ -24,7 +24,7 @@ namespace Testing_and_Evaluating_Module {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class E_Blind_Learning_SystemDataSet1 : global::System.Data.DataSet {
         
-        private Teacher_Add_QuestionDataTable tableTeacher_Add_Question;
+        private Teacher_Add_Essay_Question_1DataTable tableTeacher_Add_Essay_Question_1;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace Testing_and_Evaluating_Module {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Teacher_Add_Question"] != null)) {
-                    base.Tables.Add(new Teacher_Add_QuestionDataTable(ds.Tables["Teacher_Add_Question"]));
+                if ((ds.Tables["Teacher_Add_Essay_Question_1"] != null)) {
+                    base.Tables.Add(new Teacher_Add_Essay_Question_1DataTable(ds.Tables["Teacher_Add_Essay_Question_1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Testing_and_Evaluating_Module {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Teacher_Add_QuestionDataTable Teacher_Add_Question {
+        public Teacher_Add_Essay_Question_1DataTable Teacher_Add_Essay_Question_1 {
             get {
-                return this.tableTeacher_Add_Question;
+                return this.tableTeacher_Add_Essay_Question_1;
             }
         }
         
@@ -152,8 +152,8 @@ namespace Testing_and_Evaluating_Module {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Teacher_Add_Question"] != null)) {
-                    base.Tables.Add(new Teacher_Add_QuestionDataTable(ds.Tables["Teacher_Add_Question"]));
+                if ((ds.Tables["Teacher_Add_Essay_Question_1"] != null)) {
+                    base.Tables.Add(new Teacher_Add_Essay_Question_1DataTable(ds.Tables["Teacher_Add_Essay_Question_1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Testing_and_Evaluating_Module {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableTeacher_Add_Question = ((Teacher_Add_QuestionDataTable)(base.Tables["Teacher_Add_Question"]));
+            this.tableTeacher_Add_Essay_Question_1 = ((Teacher_Add_Essay_Question_1DataTable)(base.Tables["Teacher_Add_Essay_Question_1"]));
             if ((initTable == true)) {
-                if ((this.tableTeacher_Add_Question != null)) {
-                    this.tableTeacher_Add_Question.InitVars();
+                if ((this.tableTeacher_Add_Essay_Question_1 != null)) {
+                    this.tableTeacher_Add_Essay_Question_1.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace Testing_and_Evaluating_Module {
             this.Namespace = "http://tempuri.org/E_Blind_Learning_SystemDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableTeacher_Add_Question = new Teacher_Add_QuestionDataTable();
-            base.Tables.Add(this.tableTeacher_Add_Question);
+            this.tableTeacher_Add_Essay_Question_1 = new Teacher_Add_Essay_Question_1DataTable();
+            base.Tables.Add(this.tableTeacher_Add_Essay_Question_1);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeTeacher_Add_Question() {
+        private bool ShouldSerializeTeacher_Add_Essay_Question_1() {
             return false;
         }
         
@@ -270,14 +270,14 @@ namespace Testing_and_Evaluating_Module {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void Teacher_Add_QuestionRowChangeEventHandler(object sender, Teacher_Add_QuestionRowChangeEvent e);
+        public delegate void Teacher_Add_Essay_Question_1RowChangeEventHandler(object sender, Teacher_Add_Essay_Question_1RowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Teacher_Add_QuestionDataTable : global::System.Data.TypedTableBase<Teacher_Add_QuestionRow> {
+        public partial class Teacher_Add_Essay_Question_1DataTable : global::System.Data.TypedTableBase<Teacher_Add_Essay_Question_1Row> {
             
             private global::System.Data.DataColumn columnQuestionID;
             
@@ -287,20 +287,14 @@ namespace Testing_and_Evaluating_Module {
             
             private global::System.Data.DataColumn columnQuestion;
             
-            private global::System.Data.DataColumn columnOption1;
+            private global::System.Data.DataColumn columnAnswer;
             
-            private global::System.Data.DataColumn columnOption2;
-            
-            private global::System.Data.DataColumn columnOption3;
-            
-            private global::System.Data.DataColumn columnOption4;
-            
-            private global::System.Data.DataColumn columnCorrectOption;
+            private global::System.Data.DataColumn columnAllocated_Marks;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Teacher_Add_QuestionDataTable() {
-                this.TableName = "Teacher_Add_Question";
+            public Teacher_Add_Essay_Question_1DataTable() {
+                this.TableName = "Teacher_Add_Essay_Question_1";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -308,7 +302,7 @@ namespace Testing_and_Evaluating_Module {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal Teacher_Add_QuestionDataTable(global::System.Data.DataTable table) {
+            internal Teacher_Add_Essay_Question_1DataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -325,7 +319,7 @@ namespace Testing_and_Evaluating_Module {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected Teacher_Add_QuestionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Teacher_Add_Essay_Question_1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -364,41 +358,17 @@ namespace Testing_and_Evaluating_Module {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Option1Column {
+            public global::System.Data.DataColumn AnswerColumn {
                 get {
-                    return this.columnOption1;
+                    return this.columnAnswer;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Option2Column {
+            public global::System.Data.DataColumn Allocated_MarksColumn {
                 get {
-                    return this.columnOption2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Option3Column {
-                get {
-                    return this.columnOption3;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Option4Column {
-                get {
-                    return this.columnOption4;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CorrectOptionColumn {
-                get {
-                    return this.columnCorrectOption;
+                    return this.columnAllocated_Marks;
                 }
             }
             
@@ -413,53 +383,50 @@ namespace Testing_and_Evaluating_Module {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Teacher_Add_QuestionRow this[int index] {
+            public Teacher_Add_Essay_Question_1Row this[int index] {
                 get {
-                    return ((Teacher_Add_QuestionRow)(this.Rows[index]));
+                    return ((Teacher_Add_Essay_Question_1Row)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Teacher_Add_QuestionRowChangeEventHandler Teacher_Add_QuestionRowChanging;
+            public event Teacher_Add_Essay_Question_1RowChangeEventHandler Teacher_Add_Essay_Question_1RowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Teacher_Add_QuestionRowChangeEventHandler Teacher_Add_QuestionRowChanged;
+            public event Teacher_Add_Essay_Question_1RowChangeEventHandler Teacher_Add_Essay_Question_1RowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Teacher_Add_QuestionRowChangeEventHandler Teacher_Add_QuestionRowDeleting;
+            public event Teacher_Add_Essay_Question_1RowChangeEventHandler Teacher_Add_Essay_Question_1RowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Teacher_Add_QuestionRowChangeEventHandler Teacher_Add_QuestionRowDeleted;
+            public event Teacher_Add_Essay_Question_1RowChangeEventHandler Teacher_Add_Essay_Question_1RowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddTeacher_Add_QuestionRow(Teacher_Add_QuestionRow row) {
+            public void AddTeacher_Add_Essay_Question_1Row(Teacher_Add_Essay_Question_1Row row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Teacher_Add_QuestionRow AddTeacher_Add_QuestionRow(int SubjectCode, int Grade, string Question, string Option1, string Option2, string Option3, string Option4, int CorrectOption) {
-                Teacher_Add_QuestionRow rowTeacher_Add_QuestionRow = ((Teacher_Add_QuestionRow)(this.NewRow()));
+            public Teacher_Add_Essay_Question_1Row AddTeacher_Add_Essay_Question_1Row(int SubjectCode, int Grade, string Question, string Answer, decimal Allocated_Marks) {
+                Teacher_Add_Essay_Question_1Row rowTeacher_Add_Essay_Question_1Row = ((Teacher_Add_Essay_Question_1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         SubjectCode,
                         Grade,
                         Question,
-                        Option1,
-                        Option2,
-                        Option3,
-                        Option4,
-                        CorrectOption};
-                rowTeacher_Add_QuestionRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowTeacher_Add_QuestionRow);
-                return rowTeacher_Add_QuestionRow;
+                        Answer,
+                        Allocated_Marks};
+                rowTeacher_Add_Essay_Question_1Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTeacher_Add_Essay_Question_1Row);
+                return rowTeacher_Add_Essay_Question_1Row;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Teacher_Add_QuestionDataTable cln = ((Teacher_Add_QuestionDataTable)(base.Clone()));
+                Teacher_Add_Essay_Question_1DataTable cln = ((Teacher_Add_Essay_Question_1DataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -467,7 +434,7 @@ namespace Testing_and_Evaluating_Module {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Teacher_Add_QuestionDataTable();
+                return new Teacher_Add_Essay_Question_1DataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -477,11 +444,8 @@ namespace Testing_and_Evaluating_Module {
                 this.columnSubjectCode = base.Columns["SubjectCode"];
                 this.columnGrade = base.Columns["Grade"];
                 this.columnQuestion = base.Columns["Question"];
-                this.columnOption1 = base.Columns["Option1"];
-                this.columnOption2 = base.Columns["Option2"];
-                this.columnOption3 = base.Columns["Option3"];
-                this.columnOption4 = base.Columns["Option4"];
-                this.columnCorrectOption = base.Columns["CorrectOption"];
+                this.columnAnswer = base.Columns["Answer"];
+                this.columnAllocated_Marks = base.Columns["Allocated_Marks"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -495,52 +459,43 @@ namespace Testing_and_Evaluating_Module {
                 base.Columns.Add(this.columnGrade);
                 this.columnQuestion = new global::System.Data.DataColumn("Question", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnQuestion);
-                this.columnOption1 = new global::System.Data.DataColumn("Option1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOption1);
-                this.columnOption2 = new global::System.Data.DataColumn("Option2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOption2);
-                this.columnOption3 = new global::System.Data.DataColumn("Option3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOption3);
-                this.columnOption4 = new global::System.Data.DataColumn("Option4", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOption4);
-                this.columnCorrectOption = new global::System.Data.DataColumn("CorrectOption", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCorrectOption);
+                this.columnAnswer = new global::System.Data.DataColumn("Answer", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAnswer);
+                this.columnAllocated_Marks = new global::System.Data.DataColumn("Allocated_Marks", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAllocated_Marks);
                 this.columnQuestionID.AutoIncrement = true;
                 this.columnQuestionID.AutoIncrementSeed = -1;
                 this.columnQuestionID.AutoIncrementStep = -1;
                 this.columnQuestionID.AllowDBNull = false;
                 this.columnQuestionID.ReadOnly = true;
                 this.columnQuestion.MaxLength = 2147483647;
-                this.columnOption1.MaxLength = 2147483647;
-                this.columnOption2.MaxLength = 2147483647;
-                this.columnOption3.MaxLength = 2147483647;
-                this.columnOption4.MaxLength = 2147483647;
+                this.columnAnswer.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Teacher_Add_QuestionRow NewTeacher_Add_QuestionRow() {
-                return ((Teacher_Add_QuestionRow)(this.NewRow()));
+            public Teacher_Add_Essay_Question_1Row NewTeacher_Add_Essay_Question_1Row() {
+                return ((Teacher_Add_Essay_Question_1Row)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Teacher_Add_QuestionRow(builder);
+                return new Teacher_Add_Essay_Question_1Row(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Teacher_Add_QuestionRow);
+                return typeof(Teacher_Add_Essay_Question_1Row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Teacher_Add_QuestionRowChanged != null)) {
-                    this.Teacher_Add_QuestionRowChanged(this, new Teacher_Add_QuestionRowChangeEvent(((Teacher_Add_QuestionRow)(e.Row)), e.Action));
+                if ((this.Teacher_Add_Essay_Question_1RowChanged != null)) {
+                    this.Teacher_Add_Essay_Question_1RowChanged(this, new Teacher_Add_Essay_Question_1RowChangeEvent(((Teacher_Add_Essay_Question_1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -548,8 +503,8 @@ namespace Testing_and_Evaluating_Module {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Teacher_Add_QuestionRowChanging != null)) {
-                    this.Teacher_Add_QuestionRowChanging(this, new Teacher_Add_QuestionRowChangeEvent(((Teacher_Add_QuestionRow)(e.Row)), e.Action));
+                if ((this.Teacher_Add_Essay_Question_1RowChanging != null)) {
+                    this.Teacher_Add_Essay_Question_1RowChanging(this, new Teacher_Add_Essay_Question_1RowChangeEvent(((Teacher_Add_Essay_Question_1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -557,8 +512,8 @@ namespace Testing_and_Evaluating_Module {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Teacher_Add_QuestionRowDeleted != null)) {
-                    this.Teacher_Add_QuestionRowDeleted(this, new Teacher_Add_QuestionRowChangeEvent(((Teacher_Add_QuestionRow)(e.Row)), e.Action));
+                if ((this.Teacher_Add_Essay_Question_1RowDeleted != null)) {
+                    this.Teacher_Add_Essay_Question_1RowDeleted(this, new Teacher_Add_Essay_Question_1RowChangeEvent(((Teacher_Add_Essay_Question_1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -566,14 +521,14 @@ namespace Testing_and_Evaluating_Module {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Teacher_Add_QuestionRowDeleting != null)) {
-                    this.Teacher_Add_QuestionRowDeleting(this, new Teacher_Add_QuestionRowChangeEvent(((Teacher_Add_QuestionRow)(e.Row)), e.Action));
+                if ((this.Teacher_Add_Essay_Question_1RowDeleting != null)) {
+                    this.Teacher_Add_Essay_Question_1RowDeleting(this, new Teacher_Add_Essay_Question_1RowChangeEvent(((Teacher_Add_Essay_Question_1Row)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveTeacher_Add_QuestionRow(Teacher_Add_QuestionRow row) {
+            public void RemoveTeacher_Add_Essay_Question_1Row(Teacher_Add_Essay_Question_1Row row) {
                 this.Rows.Remove(row);
             }
             
@@ -600,7 +555,7 @@ namespace Testing_and_Evaluating_Module {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Teacher_Add_QuestionDataTable";
+                attribute2.FixedValue = "Teacher_Add_Essay_Question_1DataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -644,25 +599,25 @@ namespace Testing_and_Evaluating_Module {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Teacher_Add_QuestionRow : global::System.Data.DataRow {
+        public partial class Teacher_Add_Essay_Question_1Row : global::System.Data.DataRow {
             
-            private Teacher_Add_QuestionDataTable tableTeacher_Add_Question;
+            private Teacher_Add_Essay_Question_1DataTable tableTeacher_Add_Essay_Question_1;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal Teacher_Add_QuestionRow(global::System.Data.DataRowBuilder rb) : 
+            internal Teacher_Add_Essay_Question_1Row(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableTeacher_Add_Question = ((Teacher_Add_QuestionDataTable)(this.Table));
+                this.tableTeacher_Add_Essay_Question_1 = ((Teacher_Add_Essay_Question_1DataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int QuestionID {
                 get {
-                    return ((int)(this[this.tableTeacher_Add_Question.QuestionIDColumn]));
+                    return ((int)(this[this.tableTeacher_Add_Essay_Question_1.QuestionIDColumn]));
                 }
                 set {
-                    this[this.tableTeacher_Add_Question.QuestionIDColumn] = value;
+                    this[this.tableTeacher_Add_Essay_Question_1.QuestionIDColumn] = value;
                 }
             }
             
@@ -671,14 +626,15 @@ namespace Testing_and_Evaluating_Module {
             public int SubjectCode {
                 get {
                     try {
-                        return ((int)(this[this.tableTeacher_Add_Question.SubjectCodeColumn]));
+                        return ((int)(this[this.tableTeacher_Add_Essay_Question_1.SubjectCodeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SubjectCode\' in table \'Teacher_Add_Question\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SubjectCode\' in table \'Teacher_Add_Essay_Question_1\' is DBN" +
+                                "ull.", e);
                     }
                 }
                 set {
-                    this[this.tableTeacher_Add_Question.SubjectCodeColumn] = value;
+                    this[this.tableTeacher_Add_Essay_Question_1.SubjectCodeColumn] = value;
                 }
             }
             
@@ -687,14 +643,14 @@ namespace Testing_and_Evaluating_Module {
             public int Grade {
                 get {
                     try {
-                        return ((int)(this[this.tableTeacher_Add_Question.GradeColumn]));
+                        return ((int)(this[this.tableTeacher_Add_Essay_Question_1.GradeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Grade\' in table \'Teacher_Add_Question\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Grade\' in table \'Teacher_Add_Essay_Question_1\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTeacher_Add_Question.GradeColumn] = value;
+                    this[this.tableTeacher_Add_Essay_Question_1.GradeColumn] = value;
                 }
             }
             
@@ -703,191 +659,109 @@ namespace Testing_and_Evaluating_Module {
             public string Question {
                 get {
                     try {
-                        return ((string)(this[this.tableTeacher_Add_Question.QuestionColumn]));
+                        return ((string)(this[this.tableTeacher_Add_Essay_Question_1.QuestionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Question\' in table \'Teacher_Add_Question\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Question\' in table \'Teacher_Add_Essay_Question_1\' is DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableTeacher_Add_Question.QuestionColumn] = value;
+                    this[this.tableTeacher_Add_Essay_Question_1.QuestionColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Option1 {
+            public string Answer {
                 get {
                     try {
-                        return ((string)(this[this.tableTeacher_Add_Question.Option1Column]));
+                        return ((string)(this[this.tableTeacher_Add_Essay_Question_1.AnswerColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Option1\' in table \'Teacher_Add_Question\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Answer\' in table \'Teacher_Add_Essay_Question_1\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTeacher_Add_Question.Option1Column] = value;
+                    this[this.tableTeacher_Add_Essay_Question_1.AnswerColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Option2 {
+            public decimal Allocated_Marks {
                 get {
                     try {
-                        return ((string)(this[this.tableTeacher_Add_Question.Option2Column]));
+                        return ((decimal)(this[this.tableTeacher_Add_Essay_Question_1.Allocated_MarksColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Option2\' in table \'Teacher_Add_Question\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Allocated_Marks\' in table \'Teacher_Add_Essay_Question_1\' is" +
+                                " DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTeacher_Add_Question.Option2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Option3 {
-                get {
-                    try {
-                        return ((string)(this[this.tableTeacher_Add_Question.Option3Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Option3\' in table \'Teacher_Add_Question\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTeacher_Add_Question.Option3Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Option4 {
-                get {
-                    try {
-                        return ((string)(this[this.tableTeacher_Add_Question.Option4Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Option4\' in table \'Teacher_Add_Question\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTeacher_Add_Question.Option4Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int CorrectOption {
-                get {
-                    try {
-                        return ((int)(this[this.tableTeacher_Add_Question.CorrectOptionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CorrectOption\' in table \'Teacher_Add_Question\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTeacher_Add_Question.CorrectOptionColumn] = value;
+                    this[this.tableTeacher_Add_Essay_Question_1.Allocated_MarksColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsSubjectCodeNull() {
-                return this.IsNull(this.tableTeacher_Add_Question.SubjectCodeColumn);
+                return this.IsNull(this.tableTeacher_Add_Essay_Question_1.SubjectCodeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetSubjectCodeNull() {
-                this[this.tableTeacher_Add_Question.SubjectCodeColumn] = global::System.Convert.DBNull;
+                this[this.tableTeacher_Add_Essay_Question_1.SubjectCodeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsGradeNull() {
-                return this.IsNull(this.tableTeacher_Add_Question.GradeColumn);
+                return this.IsNull(this.tableTeacher_Add_Essay_Question_1.GradeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetGradeNull() {
-                this[this.tableTeacher_Add_Question.GradeColumn] = global::System.Convert.DBNull;
+                this[this.tableTeacher_Add_Essay_Question_1.GradeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsQuestionNull() {
-                return this.IsNull(this.tableTeacher_Add_Question.QuestionColumn);
+                return this.IsNull(this.tableTeacher_Add_Essay_Question_1.QuestionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetQuestionNull() {
-                this[this.tableTeacher_Add_Question.QuestionColumn] = global::System.Convert.DBNull;
+                this[this.tableTeacher_Add_Essay_Question_1.QuestionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsOption1Null() {
-                return this.IsNull(this.tableTeacher_Add_Question.Option1Column);
+            public bool IsAnswerNull() {
+                return this.IsNull(this.tableTeacher_Add_Essay_Question_1.AnswerColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetOption1Null() {
-                this[this.tableTeacher_Add_Question.Option1Column] = global::System.Convert.DBNull;
+            public void SetAnswerNull() {
+                this[this.tableTeacher_Add_Essay_Question_1.AnswerColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsOption2Null() {
-                return this.IsNull(this.tableTeacher_Add_Question.Option2Column);
+            public bool IsAllocated_MarksNull() {
+                return this.IsNull(this.tableTeacher_Add_Essay_Question_1.Allocated_MarksColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetOption2Null() {
-                this[this.tableTeacher_Add_Question.Option2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsOption3Null() {
-                return this.IsNull(this.tableTeacher_Add_Question.Option3Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetOption3Null() {
-                this[this.tableTeacher_Add_Question.Option3Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsOption4Null() {
-                return this.IsNull(this.tableTeacher_Add_Question.Option4Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetOption4Null() {
-                this[this.tableTeacher_Add_Question.Option4Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCorrectOptionNull() {
-                return this.IsNull(this.tableTeacher_Add_Question.CorrectOptionColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCorrectOptionNull() {
-                this[this.tableTeacher_Add_Question.CorrectOptionColumn] = global::System.Convert.DBNull;
+            public void SetAllocated_MarksNull() {
+                this[this.tableTeacher_Add_Essay_Question_1.Allocated_MarksColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -895,22 +769,22 @@ namespace Testing_and_Evaluating_Module {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class Teacher_Add_QuestionRowChangeEvent : global::System.EventArgs {
+        public class Teacher_Add_Essay_Question_1RowChangeEvent : global::System.EventArgs {
             
-            private Teacher_Add_QuestionRow eventRow;
+            private Teacher_Add_Essay_Question_1Row eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Teacher_Add_QuestionRowChangeEvent(Teacher_Add_QuestionRow row, global::System.Data.DataRowAction action) {
+            public Teacher_Add_Essay_Question_1RowChangeEvent(Teacher_Add_Essay_Question_1Row row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Teacher_Add_QuestionRow Row {
+            public Teacher_Add_Essay_Question_1Row Row {
                 get {
                     return this.eventRow;
                 }
@@ -938,7 +812,7 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Teacher_Add_QuestionTableAdapter : global::System.ComponentModel.Component {
+    public partial class Teacher_Add_Essay_Question_1TableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -952,7 +826,7 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public Teacher_Add_QuestionTableAdapter() {
+        public Teacher_Add_Essay_Question_1TableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1049,31 +923,25 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Teacher_Add_Question";
+            tableMapping.DataSetTable = "Teacher_Add_Essay_Question_1";
             tableMapping.ColumnMappings.Add("QuestionID", "QuestionID");
             tableMapping.ColumnMappings.Add("SubjectCode", "SubjectCode");
             tableMapping.ColumnMappings.Add("Grade", "Grade");
             tableMapping.ColumnMappings.Add("Question", "Question");
-            tableMapping.ColumnMappings.Add("Option1", "Option1");
-            tableMapping.ColumnMappings.Add("Option2", "Option2");
-            tableMapping.ColumnMappings.Add("Option3", "Option3");
-            tableMapping.ColumnMappings.Add("Option4", "Option4");
-            tableMapping.ColumnMappings.Add("CorrectOption", "CorrectOption");
+            tableMapping.ColumnMappings.Add("Answer", "Answer");
+            tableMapping.ColumnMappings.Add("Allocated_Marks", "Allocated_Marks");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Teacher_Add_Question] ([SubjectCode], [Grade], [Question], [Op" +
-                "tion1], [Option2], [Option3], [Option4], [CorrectOption]) VALUES (@SubjectCode, " +
-                "@Grade, @Question, @Option1, @Option2, @Option3, @Option4, @CorrectOption)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Teacher_Add_Essay_Question_1] ([SubjectCode], [Grade], [Questi" +
+                "on], [Answer], [Allocated_Marks]) VALUES (@SubjectCode, @Grade, @Question, @Answ" +
+                "er, @Allocated_Marks)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SubjectCode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SubjectCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Grade", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Grade", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Question", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Question", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Option1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Option1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Option2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Option2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Option3", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Option3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Option4", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Option4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CorrectOption", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CorrectOption", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Answer", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Answer", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Allocated_Marks", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "Allocated_Marks", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1089,8 +957,8 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT QuestionID, SubjectCode, Grade, Question, Option1, Option2, Option3, Optio" +
-                "n4, CorrectOption FROM dbo.Teacher_Add_Question";
+            this._commandCollection[0].CommandText = "SELECT QuestionID, SubjectCode, Grade, Question, Answer, Allocated_Marks FROM dbo" +
+                ".Teacher_Add_Essay_Question_1";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1098,7 +966,7 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(E_Blind_Learning_SystemDataSet1.Teacher_Add_QuestionDataTable dataTable) {
+        public virtual int Fill(E_Blind_Learning_SystemDataSet1.Teacher_Add_Essay_Question_1DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1111,9 +979,9 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual E_Blind_Learning_SystemDataSet1.Teacher_Add_QuestionDataTable GetData() {
+        public virtual E_Blind_Learning_SystemDataSet1.Teacher_Add_Essay_Question_1DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            E_Blind_Learning_SystemDataSet1.Teacher_Add_QuestionDataTable dataTable = new E_Blind_Learning_SystemDataSet1.Teacher_Add_QuestionDataTable();
+            E_Blind_Learning_SystemDataSet1.Teacher_Add_Essay_Question_1DataTable dataTable = new E_Blind_Learning_SystemDataSet1.Teacher_Add_Essay_Question_1DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1121,7 +989,7 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(E_Blind_Learning_SystemDataSet1.Teacher_Add_QuestionDataTable dataTable) {
+        public virtual int Update(E_Blind_Learning_SystemDataSet1.Teacher_Add_Essay_Question_1DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -1129,7 +997,7 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(E_Blind_Learning_SystemDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "Teacher_Add_Question");
+            return this.Adapter.Update(dataSet, "Teacher_Add_Essay_Question_1");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1151,7 +1019,7 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> SubjectCode, global::System.Nullable<int> Grade, string Question, string Option1, string Option2, string Option3, string Option4, global::System.Nullable<int> CorrectOption) {
+        public virtual int Insert(global::System.Nullable<int> SubjectCode, global::System.Nullable<int> Grade, string Question, string Answer, global::System.Nullable<decimal> Allocated_Marks) {
             if ((SubjectCode.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(SubjectCode.Value));
             }
@@ -1170,35 +1038,17 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Question));
             }
-            if ((Option1 == null)) {
+            if ((Answer == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Option1));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Answer));
             }
-            if ((Option2 == null)) {
+            if ((Allocated_Marks.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(Allocated_Marks.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Option2));
-            }
-            if ((Option3 == null)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Option3));
-            }
-            if ((Option4 == null)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Option4));
-            }
-            if ((CorrectOption.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(CorrectOption.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1229,7 +1079,7 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         
         private UpdateOrderOption _updateOrder;
         
-        private Teacher_Add_QuestionTableAdapter _teacher_Add_QuestionTableAdapter;
+        private Teacher_Add_Essay_Question_1TableAdapter _teacher_Add_Essay_Question_1TableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1251,12 +1101,12 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public Teacher_Add_QuestionTableAdapter Teacher_Add_QuestionTableAdapter {
+        public Teacher_Add_Essay_Question_1TableAdapter Teacher_Add_Essay_Question_1TableAdapter {
             get {
-                return this._teacher_Add_QuestionTableAdapter;
+                return this._teacher_Add_Essay_Question_1TableAdapter;
             }
             set {
-                this._teacher_Add_QuestionTableAdapter = value;
+                this._teacher_Add_Essay_Question_1TableAdapter = value;
             }
         }
         
@@ -1279,9 +1129,9 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._teacher_Add_QuestionTableAdapter != null) 
-                            && (this._teacher_Add_QuestionTableAdapter.Connection != null))) {
-                    return this._teacher_Add_QuestionTableAdapter.Connection;
+                if (((this._teacher_Add_Essay_Question_1TableAdapter != null) 
+                            && (this._teacher_Add_Essay_Question_1TableAdapter.Connection != null))) {
+                    return this._teacher_Add_Essay_Question_1TableAdapter.Connection;
                 }
                 return null;
             }
@@ -1296,7 +1146,7 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._teacher_Add_QuestionTableAdapter != null)) {
+                if ((this._teacher_Add_Essay_Question_1TableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1310,12 +1160,12 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(E_Blind_Learning_SystemDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._teacher_Add_QuestionTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Teacher_Add_Question.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._teacher_Add_Essay_Question_1TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Teacher_Add_Essay_Question_1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._teacher_Add_QuestionTableAdapter.Update(updatedRows));
+                    result = (result + this._teacher_Add_Essay_Question_1TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1329,11 +1179,11 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(E_Blind_Learning_SystemDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._teacher_Add_QuestionTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Teacher_Add_Question.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._teacher_Add_Essay_Question_1TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Teacher_Add_Essay_Question_1.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._teacher_Add_QuestionTableAdapter.Update(addedRows));
+                    result = (result + this._teacher_Add_Essay_Question_1TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1347,11 +1197,11 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(E_Blind_Learning_SystemDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._teacher_Add_QuestionTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Teacher_Add_Question.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._teacher_Add_Essay_Question_1TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Teacher_Add_Essay_Question_1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._teacher_Add_QuestionTableAdapter.Update(deletedRows));
+                    result = (result + this._teacher_Add_Essay_Question_1TableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1394,8 +1244,8 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._teacher_Add_QuestionTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._teacher_Add_QuestionTableAdapter.Connection) == false))) {
+            if (((this._teacher_Add_Essay_Question_1TableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._teacher_Add_Essay_Question_1TableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1431,13 +1281,13 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._teacher_Add_QuestionTableAdapter != null)) {
-                    revertConnections.Add(this._teacher_Add_QuestionTableAdapter, this._teacher_Add_QuestionTableAdapter.Connection);
-                    this._teacher_Add_QuestionTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._teacher_Add_QuestionTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._teacher_Add_QuestionTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._teacher_Add_QuestionTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._teacher_Add_QuestionTableAdapter.Adapter);
+                if ((this._teacher_Add_Essay_Question_1TableAdapter != null)) {
+                    revertConnections.Add(this._teacher_Add_Essay_Question_1TableAdapter, this._teacher_Add_Essay_Question_1TableAdapter.Connection);
+                    this._teacher_Add_Essay_Question_1TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._teacher_Add_Essay_Question_1TableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._teacher_Add_Essay_Question_1TableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._teacher_Add_Essay_Question_1TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._teacher_Add_Essay_Question_1TableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1498,9 +1348,9 @@ namespace Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet1TableAdap
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._teacher_Add_QuestionTableAdapter != null)) {
-                    this._teacher_Add_QuestionTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._teacher_Add_QuestionTableAdapter]));
-                    this._teacher_Add_QuestionTableAdapter.Transaction = null;
+                if ((this._teacher_Add_Essay_Question_1TableAdapter != null)) {
+                    this._teacher_Add_Essay_Question_1TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._teacher_Add_Essay_Question_1TableAdapter]));
+                    this._teacher_Add_Essay_Question_1TableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

@@ -49,28 +49,20 @@
             this.rtbAnswer = new System.Windows.Forms.RichTextBox();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.teacherAddEssayQuestion1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.e_Blind_Learning_SystemDataSet9 = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet9();
             this.lblQuestionID = new System.Windows.Forms.Label();
-            this.teacherAddEssayQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.e_Blind_Learning_SystemDataSet7 = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet7();
-            this.teacher_Add_Essay_QuestionTableAdapter = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet7TableAdapters.Teacher_Add_Essay_QuestionTableAdapter();
+            this.teacherAddEssayQuestion1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.e_Blind_Learning_SystemDataSet9 = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet9();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
-            this.e_Blind_Learning_SystemDataSet8 = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet8();
             this.teacherAddEssayQuestion1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.teacher_Add_Essay_Question_1TableAdapter = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet8TableAdapters.Teacher_Add_Essay_Question_1TableAdapter();
             this.teacher_Add_Essay_Question_1TableAdapter1 = new Testing_and_Evaluating_Module.E_Blind_Learning_SystemDataSet9TableAdapters.Teacher_Add_Essay_Question_1TableAdapter();
-            this.rtbProcessSAns = new System.Windows.Forms.RichTextBox();
-            this.rdbProcessKey = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherAddQuestionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_Blind_Learning_SystemDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teacherAddEssayQuestion1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherAddEssayQuestion1BindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_Blind_Learning_SystemDataSet9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teacherAddEssayQuestionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e_Blind_Learning_SystemDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e_Blind_Learning_SystemDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherAddEssayQuestion1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +85,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(665, 309);
+            this.richTextBox1.Location = new System.Drawing.Point(30, 326);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(298, 75);
             this.richTextBox1.TabIndex = 14;
@@ -160,18 +152,17 @@
             // 
             this.btnNext.BackColor = System.Drawing.SystemColors.Control;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(1092, 398);
+            this.btnNext.Location = new System.Drawing.Point(815, 404);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(127, 29);
+            this.btnNext.Size = new System.Drawing.Size(148, 29);
             this.btnNext.TabIndex = 7;
+            this.btnNext.Text = "Next Essay";
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox1.Controls.Add(this.rdbProcessKey);
-            this.groupBox1.Controls.Add(this.rtbProcessSAns);
             this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.rtbAnswer);
             this.groupBox1.Controls.Add(this.lblQuestion);
@@ -189,14 +180,15 @@
             this.groupBox1.Size = new System.Drawing.Size(1261, 467);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.Control;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(950, 398);
+            this.btnSave.Location = new System.Drawing.Point(665, 404);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(127, 29);
+            this.btnSave.Size = new System.Drawing.Size(144, 29);
             this.btnSave.TabIndex = 19;
             this.btnSave.Text = "Save Answer";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -213,8 +205,8 @@
             // lblQuestion
             // 
             this.lblQuestion.AutoSize = true;
-            this.lblQuestion.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.teacherAddEssayQuestion1BindingSource1, "Question", true));
-            this.lblQuestion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teacherAddEssayQuestion1BindingSource1, "Question", true));
+            this.lblQuestion.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.teacherAddEssayQuestion1BindingSource2, "Question", true));
+            this.lblQuestion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teacherAddEssayQuestion1BindingSource2, "Question", true));
             this.lblQuestion.Location = new System.Drawing.Point(27, 99);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(49, 13);
@@ -224,37 +216,27 @@
             // teacherAddEssayQuestion1BindingSource1
             // 
             this.teacherAddEssayQuestion1BindingSource1.DataMember = "Teacher_Add_Essay_Question_1";
-            this.teacherAddEssayQuestion1BindingSource1.DataSource = this.e_Blind_Learning_SystemDataSet9;
-            // 
-            // e_Blind_Learning_SystemDataSet9
-            // 
-            this.e_Blind_Learning_SystemDataSet9.DataSetName = "E_Blind_Learning_SystemDataSet9";
-            this.e_Blind_Learning_SystemDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lblQuestionID
             // 
             this.lblQuestionID.AutoSize = true;
-            this.lblQuestionID.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.teacherAddEssayQuestion1BindingSource1, "QuestionID", true));
-            this.lblQuestionID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teacherAddEssayQuestion1BindingSource1, "QuestionID", true));
+            this.lblQuestionID.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.teacherAddEssayQuestion1BindingSource2, "QuestionID", true));
+            this.lblQuestionID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teacherAddEssayQuestion1BindingSource2, "QuestionID", true));
             this.lblQuestionID.Location = new System.Drawing.Point(27, 59);
             this.lblQuestionID.Name = "lblQuestionID";
             this.lblQuestionID.Size = new System.Drawing.Size(60, 13);
             this.lblQuestionID.TabIndex = 16;
             this.lblQuestionID.Text = "QuestionID";
             // 
-            // teacherAddEssayQuestionBindingSource
+            // teacherAddEssayQuestion1BindingSource2
             // 
-            this.teacherAddEssayQuestionBindingSource.DataMember = "Teacher_Add_Essay_Question";
-            this.teacherAddEssayQuestionBindingSource.DataSource = this.e_Blind_Learning_SystemDataSet7;
+            this.teacherAddEssayQuestion1BindingSource2.DataMember = "Teacher_Add_Essay_Question_1";
+            this.teacherAddEssayQuestion1BindingSource2.DataSource = this.e_Blind_Learning_SystemDataSet9;
             // 
-            // e_Blind_Learning_SystemDataSet7
+            // e_Blind_Learning_SystemDataSet9
             // 
-            this.e_Blind_Learning_SystemDataSet7.DataSetName = "E_Blind_Learning_SystemDataSet7";
-            this.e_Blind_Learning_SystemDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // teacher_Add_Essay_QuestionTableAdapter
-            // 
-            this.teacher_Add_Essay_QuestionTableAdapter.ClearBeforeFill = true;
+            this.e_Blind_Learning_SystemDataSet9.DataSetName = "E_Blind_Learning_SystemDataSet9";
+            this.e_Blind_Learning_SystemDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // timer3
             // 
@@ -264,39 +246,13 @@
             // 
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
-            // e_Blind_Learning_SystemDataSet8
-            // 
-            this.e_Blind_Learning_SystemDataSet8.DataSetName = "E_Blind_Learning_SystemDataSet8";
-            this.e_Blind_Learning_SystemDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // teacherAddEssayQuestion1BindingSource
             // 
             this.teacherAddEssayQuestion1BindingSource.DataMember = "Teacher_Add_Essay_Question_1";
-            this.teacherAddEssayQuestion1BindingSource.DataSource = this.e_Blind_Learning_SystemDataSet8;
-            // 
-            // teacher_Add_Essay_Question_1TableAdapter
-            // 
-            this.teacher_Add_Essay_Question_1TableAdapter.ClearBeforeFill = true;
             // 
             // teacher_Add_Essay_Question_1TableAdapter1
             // 
             this.teacher_Add_Essay_Question_1TableAdapter1.ClearBeforeFill = true;
-            // 
-            // rtbProcessSAns
-            // 
-            this.rtbProcessSAns.Location = new System.Drawing.Point(30, 309);
-            this.rtbProcessSAns.Name = "rtbProcessSAns";
-            this.rtbProcessSAns.Size = new System.Drawing.Size(323, 75);
-            this.rtbProcessSAns.TabIndex = 20;
-            this.rtbProcessSAns.Text = "";
-            // 
-            // rdbProcessKey
-            // 
-            this.rdbProcessKey.Location = new System.Drawing.Point(359, 309);
-            this.rdbProcessKey.Name = "rdbProcessKey";
-            this.rdbProcessKey.Size = new System.Drawing.Size(300, 75);
-            this.rdbProcessKey.TabIndex = 21;
-            this.rdbProcessKey.Text = "";
             // 
             // Examintion_Essay
             // 
@@ -314,10 +270,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teacherAddEssayQuestion1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherAddEssayQuestion1BindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_Blind_Learning_SystemDataSet9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teacherAddEssayQuestionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e_Blind_Learning_SystemDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e_Blind_Learning_SystemDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherAddEssayQuestion1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -343,19 +297,17 @@
         public System.Windows.Forms.RichTextBox rtbAnswer;
         public  System.Windows.Forms.Label lblQuestion;
         public  System.Windows.Forms.Label lblQuestionID;
-        private E_Blind_Learning_SystemDataSet7 e_Blind_Learning_SystemDataSet7;
-        private System.Windows.Forms.BindingSource teacherAddEssayQuestionBindingSource;
-        private E_Blind_Learning_SystemDataSet7TableAdapters.Teacher_Add_Essay_QuestionTableAdapter teacher_Add_Essay_QuestionTableAdapter;
+      //  private E_Blind_Learning_SystemDataSet7 e_Blind_Learning_SystemDataSet7;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Button btnSave;
-        private E_Blind_Learning_SystemDataSet8 e_Blind_Learning_SystemDataSet8;
+      //  private E_Blind_Learning_SystemDataSet8 e_Blind_Learning_SystemDataSet8;
         private System.Windows.Forms.BindingSource teacherAddEssayQuestion1BindingSource;
-        private E_Blind_Learning_SystemDataSet8TableAdapters.Teacher_Add_Essay_Question_1TableAdapter teacher_Add_Essay_Question_1TableAdapter;
-        private E_Blind_Learning_SystemDataSet9 e_Blind_Learning_SystemDataSet9;
+       // private E_Blind_Learning_SystemDataSet8TableAdapters.Teacher_Add_Essay_Question_1TableAdapter teacher_Add_Essay_Question_1TableAdapter;
+      //  private E_Blind_Learning_SystemDataSet1 e_Blind_Learning_SystemDataSet9;
         private System.Windows.Forms.BindingSource teacherAddEssayQuestion1BindingSource1;
         private E_Blind_Learning_SystemDataSet9TableAdapters.Teacher_Add_Essay_Question_1TableAdapter teacher_Add_Essay_Question_1TableAdapter1;
-        private System.Windows.Forms.RichTextBox rtbProcessSAns;
-        private System.Windows.Forms.RichTextBox rdbProcessKey;
+        private System.Windows.Forms.BindingSource teacherAddEssayQuestion1BindingSource2;
+        private E_Blind_Learning_SystemDataSet9 e_Blind_Learning_SystemDataSet9;
     }
 }
